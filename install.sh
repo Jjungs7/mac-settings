@@ -12,13 +12,13 @@ brew install --cask iterm2
 
 brew install zsh-autosuggestions zsh-syntax-highlighting
 
-brew install --cask intellij-idea visual-studio-code
+brew install --cask intellij-idea visual-studio-code pycharm goland
 
-brew install gnupg gpg-suite
-brew install --cask keybase
+brew install ansible gnupg
+brew install --cask keybase gpg-suite-no-mail
 
-brew install kubectl
-brew install --cask docker
+brew install kubernetes-cli
+brew install --cask docker lens
 
 brew install --cask firefox google-chrome
 
