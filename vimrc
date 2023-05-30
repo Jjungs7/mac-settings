@@ -8,6 +8,7 @@ set hlsearch " 검색어 하이라이팅
 set history=256
 set incsearch
 set laststatus=2 " 상태바 표시 항상
+set mouse=a
 set nu
 "set paste " 붙여넣기 계단현상 없애기
 set ruler " 현재 커서 위치 표시
@@ -43,4 +44,5 @@ nnoremap <F9> :!g++ -std=c++17 % -Wall -g -o %<.out && ./%<.out<CR>
 nnoremap <S-F9> :vs input.txt<CR>
 nnoremap <C-F9> :!g++ -std=c++17 % -Wall -g -o %<.out && cat input.txt && echo && ./%<.out < input.txt<CR>
 
-nnoremap <C-S-y> :%y+<CR>
+set clipboard=unnamedplus
+nnoremap <C-S-F9> :%y+<CR>

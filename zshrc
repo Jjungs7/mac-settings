@@ -100,8 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export GPG_TTY=$(tty)
 if command -v pyenv 1>/dev/null 2>&1; then
@@ -112,19 +112,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-_direnv_hook() {
-  trap -- '' SIGINT;
-  eval "$("/usr/local/bin/direnv" export zsh)";
-  trap - SIGINT;
-}
-typeset -ag precmd_functions;
-if [[ -z ${precmd_functions[(r)_direnv_hook]} ]]; then
-  precmd_functions=( _direnv_hook ${precmd_functions[@]} )
-fi
-typeset -ag chpwd_functions;
-if [[ -z ${chpwd_functions[(r)_direnv_hook]} ]]; then
-  chpwd_functions=( _direnv_hook ${chpwd_functions[@]} )
-fi
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+LC_CTYPE="en_US.UTF-8"
+
+eval "$(direnv hook zsh)"
+
+export PATH="$HOME/.asdf/shims:$PATH"
+
+alias awsp="source _awsp"
+source /Users/ian/.iterm2_shell_integration.zsh
 
