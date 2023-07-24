@@ -44,5 +44,5 @@ nnoremap <F9> :!g++ -std=c++17 % -Wall -g -o %<.out && ./%<.out<CR>
 nnoremap <S-F9> :vs input.txt<CR>
 nnoremap <C-F9> :!g++ -std=c++17 % -Wall -g -o %<.out && cat input.txt && echo && ./%<.out < input.txt<CR>
 
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 nnoremap <C-S-F9> :%y+<CR>
