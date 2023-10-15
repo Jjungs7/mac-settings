@@ -122,3 +122,7 @@ export PATH="$HOME/.asdf/shims:$PATH"
 alias awsp="source _awsp"
 source /Users/ian/.iterm2_shell_integration.zsh
 
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+alias k=kubectl
+complete -o default -F __start_kubectl k

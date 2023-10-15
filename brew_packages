@@ -1,1 +1,1 @@
-ansible asdf awscli direnv docker gnupg gnuplot inetutils jq kubernetes-cli mysql openssh protobuf redis tmux tree vault wget zsh-autosuggestions zsh-syntax-highlighting
+ansible asdf awscli direnv docker gnupg gnuplot helm inetutils jq kafka kubernetes-cli mysql openssh pigz protobuf qt@5 redis tmux tree vault wget zsh-autosuggestions zsh-syntax-highlighting
