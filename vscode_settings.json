@@ -1,0 +1,42 @@
+{
+    "window.newWindowDimensions": "inherit",
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "testing.automaticallyOpenPeekViewDuringAutoRun": true,
+    "editor.hover.delay": 200,
+    "git.autofetch": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "pylint.args": [
+        "--disable=C0114,C0115,C0116",
+        "--max-line-length=120"
+    ],
+    "black-formatter.args": [
+        "--line-length=120"
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.tabSize": 2
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.fontSize": 14,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "editor.minimap.enabled": false,
+    "editor.indentSize": "tabSize"
+}

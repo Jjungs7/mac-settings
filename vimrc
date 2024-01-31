@@ -23,6 +23,7 @@ set sts=4 "st select
 set tabstop=4
 set ts=4 "tag select
 set wildmode=longest,list
+set mmp=5000
 
 " 마지막으로 수정된 곳에 커서를 위치함
 au BufReadPost *

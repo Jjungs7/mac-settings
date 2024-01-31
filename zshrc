@@ -8,7 +8,7 @@ export ZSH="/Users/ian/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="edvardm"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,7 +70,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo)
+plugins=(git sudo kube-ps1)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -122,7 +122,10 @@ export PATH="$HOME/.asdf/shims:$PATH"
 alias awsp="source _awsp"
 source /Users/ian/.iterm2_shell_integration.zsh
 
-[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
-
 alias k=kubectl
 complete -o default -F __start_kubectl k
+
+PROMPT='$(kube_ps1) '$PROMPT
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+. ~/.asdf/plugins/java/set-java-home.zsh
