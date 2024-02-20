@@ -32,11 +32,16 @@
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4
     },
     "[go]": {
         "editor.defaultFormatter": "golang.go"
     },
     "editor.minimap.enabled": false,
-    "editor.indentSize": "tabSize"
+    "editor.indentSize": "tabSize",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.zoomLevel": 1
 }
