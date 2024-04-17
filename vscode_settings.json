@@ -43,5 +43,19 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "diffEditor.codeLens": true,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "cody.autocomplete.advanced.provider": "experimental-ollama",
+    "cody.autocomplete.experimental.ollamaOptions": {
+        "url": "http://localhost:11434",
+        "model": "gemma:7b"
+    },
+    "tabAutocompleteModel": {
+        "title": "Tab Autocomplete Model",
+        "provider": "ollama",
+        "model": "gemma:7b",
+        "apiBase": "http://localhost:11434"
+    },
+    "continue.enableTabAutocomplete": false
 }
