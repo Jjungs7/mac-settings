@@ -70,7 +70,7 @@ ZSH_THEME="edvardm"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo kube-ps1)
+plugins=(git sudo kube-ps1 poetry)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,7 +117,7 @@ LC_CTYPE="en_US.UTF-8"
 
 eval "$(direnv hook zsh)"
 
-export PATH="$HOME/.asdf/shims:$PATH"
+export PATH="$HOME/.asdf/shims:/Applications/PyCharm CE.app/Contents/MacOS:$PATH"
 
 alias awsp="source _awsp"
 source /Users/ian/.iterm2_shell_integration.zsh

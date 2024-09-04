@@ -1,61 +1,83 @@
 {
-    "window.newWindowDimensions": "inherit",
+    "autoDocstring.docstringFormat": "numpy",
+    "continue.enableTabAutocomplete": false,
+    "continue.remoteConfigServerUrl": "https://kopilot-config-beta.dev.onkakao.net",
+    "continue.telemetryEnabled": false,
+    "continue.userToken": "dummy",
     "[python]": {
-        "editor.formatOnType": true,
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never"
+        },
     },
-    "testing.automaticallyOpenPeekViewDuringAutoRun": true,
-    "editor.hover.delay": 200,
-    "git.autofetch": true,
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "python.analysis.inlayHints.functionReturnTypes": true,
-    "python.analysis.typeCheckingMode": "basic",
-    "pylint.args": [
-        "--disable=C0114,C0115,C0116",
-        "--max-line-length=120"
+    "black-formatter.path": [
+        "/Users/ian/.asdf/shims/black"
     ],
     "black-formatter.args": [
         "--line-length=120"
     ],
+    "isort.path": [
+        "/Users/ian/.asdf/shims/isort"
+    ],
+    "isort.args": [
+        "--profile",
+        "black",
+        "-l",
+        "120"
+    ],
+    "pylint.path": [
+        "/Users/ian/.asdf/shims/pylint",
+        "--rcfile=${env:HOME}/.pylintrc"
+    ],
+    "pylint.args": [
+        "--disable=C0114,C0115,C0116",
+        "--max-line-length=120"
+    ],
+    "python.analysis.fixAll": [
+        "source.unusedImports"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features",
         "editor.tabSize": 2
     },
     "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "editor.fontSize": 14,
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.tabSize": 2
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.tabSize": 4
     },
-    "[go]": {
-        "editor.defaultFormatter": "golang.go"
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
-    "editor.minimap.enabled": false,
-    "editor.indentSize": "tabSize",
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
     },
-    "window.zoomLevel": 1,
     "diffEditor.codeLens": true,
+    "editor.codeLens": false,
+    "editor.fontSize": 14,
+    "editor.hover.delay": 200,
+    "editor.indentSize": "tabSize",
     "editor.inlineSuggest.suppressSuggestions": true,
-    "cody.autocomplete.advanced.provider": "experimental-ollama",
-    "cody.autocomplete.experimental.ollamaOptions": {
-        "url": "http://localhost:11434",
-        "model": "gemma:7b"
+    "editor.minimap.enabled": false,
+    "git.autofetch": true,
+    "gitlens.currentLine.enabled": false,
+    "testing.automaticallyOpenPeekViewDuringAutoRun": true,
+    "vs-kubernetes": {
+        "vscode-kubernetes.minikube-path-mac": "/Users/ian/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
     },
-    "tabAutocompleteModel": {
-        "title": "Tab Autocomplete Model",
-        "provider": "ollama",
-        "model": "gemma:7b",
-        "apiBase": "http://localhost:11434"
-    },
-    "continue.enableTabAutocomplete": false
+    "window.newWindowDimensions": "inherit",
+    "yaml.extension.recommendations": false,
+    "yaml.schemaStore.enable": false,
+    "continue.remoteConfigSyncPeriod": 30,
 }
