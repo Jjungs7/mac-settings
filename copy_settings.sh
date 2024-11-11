@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cp ~/Library/Application\ Support/Code/User/settings.json vscode_settings.json
+cp ~/Library/Application\ Support/JetBrains/IntelliJIdea2024.2/idea.properties intellij.idea.properties
 cp ~/.vimrc vimrc
 cp ~/.zshrc zshrc
 cp ~/.tmux.conf tmux.conf

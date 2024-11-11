@@ -23,6 +23,7 @@ cp zshrc ~/.zshrc
 cp vimrc ~/.vimrc
 cp tmux.conf ~/.tmux.conf
 cp com.googlecode.iterm2.plist ~
+#cp intellij.idea.properties ~/Library/Application\ Support/JetBrains/IntelliJIdea2024.2/idea.properties
 
 cp zprofile ~/.zprofile
 

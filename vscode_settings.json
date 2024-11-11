@@ -1,83 +1,9 @@
 {
-    "autoDocstring.docstringFormat": "numpy",
+    "continue.remoteConfigSyncPeriod": 1440,
+    "continue.remoteConfigServerUrl": "https://kopilot-config-beta.dev.onkakao.net/",
+    "continue.userToken": "asd",
     "continue.enableTabAutocomplete": false,
-    "continue.remoteConfigServerUrl": "https://kopilot-config-beta.dev.onkakao.net",
-    "continue.telemetryEnabled": false,
-    "continue.userToken": "dummy",
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnSave": false,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "never"
-        },
-    },
-    "black-formatter.path": [
-        "/Users/ian/.asdf/shims/black"
-    ],
-    "black-formatter.args": [
-        "--line-length=120"
-    ],
-    "isort.path": [
-        "/Users/ian/.asdf/shims/isort"
-    ],
-    "isort.args": [
-        "--profile",
-        "black",
-        "-l",
-        "120"
-    ],
-    "pylint.path": [
-        "/Users/ian/.asdf/shims/pylint",
-        "--rcfile=${env:HOME}/.pylintrc"
-    ],
-    "pylint.args": [
-        "--disable=C0114,C0115,C0116",
-        "--max-line-length=120"
-    ],
-    "python.analysis.fixAll": [
-        "source.unusedImports"
-    ],
-    "python.testing.pytestEnabled": true,
-    "python.testing.unittestEnabled": false,
-    "[go]": {
-        "editor.defaultFormatter": "golang.go"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features",
-        "editor.tabSize": 2
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features",
-        "editor.tabSize": 2
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.tabSize": 4
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "diffEditor.codeLens": true,
-    "editor.codeLens": false,
     "editor.fontSize": 14,
-    "editor.hover.delay": 200,
-    "editor.indentSize": "tabSize",
-    "editor.inlineSuggest.suppressSuggestions": true,
-    "editor.minimap.enabled": false,
-    "git.autofetch": true,
-    "gitlens.currentLine.enabled": false,
-    "testing.automaticallyOpenPeekViewDuringAutoRun": true,
-    "vs-kubernetes": {
-        "vscode-kubernetes.minikube-path-mac": "/Users/ian/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
-    },
-    "window.newWindowDimensions": "inherit",
-    "yaml.extension.recommendations": false,
-    "yaml.schemaStore.enable": false,
-    "continue.remoteConfigSyncPeriod": 30,
+    "debug.console.fontSize": 14,
+    "editor.linkedEditing": true
 }
