@@ -20,14 +20,21 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 sed -i '' "s/prompt_segment blue "'$CURRENT_FG'" '%~'/prompt_segment blue "'$CURRENT_FG'" '%2~'/" ~/.oh-my-zsh/themes/agnoster.zsh-theme
 
 cp zshrc ~/.zshrc
+cp zprofile ~/.zprofile
 cp vimrc ~/.vimrc
 cp tmux.conf ~/.tmux.conf
-cp com.googlecode.iterm2.plist ~
+cp com.googlecode.iterm2.plist ~/
+cp -r git-templates ~/
 #cp intellij.idea.properties ~/Library/Application\ Support/JetBrains/IntelliJIdea2024.2/idea.properties
-
-cp zprofile ~/.zprofile
 
 # Manual:
 # Kakaotalk
 # Slack
 # 카카오워크
+
+# npm
+# npm install -g @json2csv/cli @commitlint/lint @commitlint/config-conventional conventional-changelog
+
+# pip
+# pip install black isort pylint pytest pytest-cov pytest-mock html2jirawiki
+

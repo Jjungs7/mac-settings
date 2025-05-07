@@ -118,7 +118,7 @@ export NVM_DIR="$HOME/.nvm"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 LC_CTYPE="en_US.UTF-8"
 
-export PATH="$HOME/.asdf/shims:$HOME/.bin:$PATH"
+export PATH="$HOME/.asdf/shims:$HOME/.bin:${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 alias awsp="source _awsp"
 
@@ -129,3 +129,5 @@ source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 PROMPT='$(kube_ps1) '$PROMPT
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
+
+. "$HOME/.local/bin/env"

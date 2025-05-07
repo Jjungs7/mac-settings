@@ -1,0 +1,46 @@
+{
+    "autoDocstring.docstringFormat": "google",
+    "window.commandCenter": true,
+    "editor.fontSize": 14,
+    "database-client.autoSync": true,
+    "git.autofetch": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit",
+            "source.unusedImports": "always"
+        }
+    },
+    "black-formatter.path": [
+        "/Users/ian/.asdf/shims/black"
+    ],
+    "black-formatter.args": [
+        "--line-length=120"
+    ],
+    "isort.args": [
+        "--profile",
+        "black",
+        "-l",
+        "120"
+    ],
+    "isort.path": [
+        "/Users/ian/.asdf/shims/isort"
+    ],
+    "terminal.integrated.fontSize": 14,
+    "python.languageServer": "Default",
+    "testing.defaultGutterClickAction": "debug",
+    "editor.accessibilitySupport": "off",
+    "workbench.colorTheme": "Default Dark+",
+    "cursor.cpp.disabledLanguages": [
+        "markdown",
+        "plaintext"
+    ],
+    "pylint.path": [
+        "/Users/ian/.asdf/shims/pylint",
+        "--rcfile=${env:HOME}/.pylintrc"
+    ],
+    "files.associations": {
+        "hosts-migration-4-configure-initial-ip": "ini"
+    }
+}
