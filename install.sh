@@ -33,7 +33,7 @@ cp -r git-templates ~/
 # 카카오워크
 
 # npm
-# npm install -g @json2csv/cli @commitlint/lint @commitlint/config-conventional conventional-changelog
+# npm install -g @json2csv/cli @commitlint/cli @commitlint/config-conventional conventional-changelog
 
 # pip
 # pip install black isort pylint pytest pytest-cov pytest-mock html2jirawiki

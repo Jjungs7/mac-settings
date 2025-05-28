@@ -42,5 +42,6 @@
     ],
     "files.associations": {
         "hosts-migration-4-configure-initial-ip": "ini"
-    }
+    },
+    "git.replaceTagsWhenPull": true
 }
