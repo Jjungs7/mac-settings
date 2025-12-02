@@ -1,4 +1,8 @@
 #!/bin/bash
+defaults write -g InitialKeyRepeat -float 15.0
+defaults write -g KeyRepeat -float 2.0
+defaults write -g com.apple.mouse.scaling -float 1.0
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # brew packages
@@ -24,7 +28,9 @@ cp zprofile ~/.zprofile
 cp vimrc ~/.vimrc
 cp tmux.conf ~/.tmux.conf
 cp com.googlecode.iterm2.plist ~/
-cp -r git-templates ~/
+cp gitconfig ~/
+cp cursor_settings.json ~/Library/Application\ Support/Cursor/User/settings.json
+
 #cp intellij.idea.properties ~/Library/Application\ Support/JetBrains/IntelliJIdea2024.2/idea.properties
 
 # Manual:
