@@ -2,9 +2,7 @@
 
 cp ~/Library/Application\ Support/Cursor/User/settings.json cursor_settings.json
 cp ~/Library/Application\ Support/Cursor/User/keybindings.json cursor_keybindings.json
-cp ~/Library/Application\ Support/Windsurf/User/settings.json windsurf_settings.json
-cp ~/Library/Application\ Support/Windsurf/User/keybindings.json windsurf_keybindings.json
-cp ~/Library/Application\ Support/JetBrains/IntelliJIdea2024.2/idea.properties intellij.idea.properties
+cp ~/Library/Application\ Support/JetBrains/IntelliJIdea2025.2/idea.properties intellij.idea.properties
 cp ~/.vimrc vimrc
 cp ~/.zshrc zshrc
 cp ~/.zprofile zprofile

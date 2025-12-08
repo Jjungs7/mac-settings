@@ -1,0 +1,15 @@
+[user]
+	name = ian.lock(양정일)/kakao
+	email = ian.lock@kakaocorp.com
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[lfs]
+	url = https://github-lfs.daumkakao.com
+[init]
+	templateDir = ~/.git-templates
+[alias]
+	cz = !npx cz
+

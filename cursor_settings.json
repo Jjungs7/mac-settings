@@ -31,7 +31,6 @@
     "python.languageServer": "Default",
     "testing.defaultGutterClickAction": "debug",
     "editor.accessibilitySupport": "off",
-    "workbench.colorTheme": "Default Dark+",
     "cursor.cpp.disabledLanguages": [
         "markdown",
         "plaintext"
@@ -43,5 +42,27 @@
     "files.associations": {
         "hosts-migration-4-configure-initial-ip": "ini"
     },
-    "git.replaceTagsWhenPull": true
+    "git.replaceTagsWhenPull": true,
+    "workbench.colorTheme": "Cursor Dark Midnight",
+    "redhat.telemetry.enabled": false,
+    "kotlin.languageServer.enabled": false,
+    "kotlin.debugAdapter.enabled": false,
+    "git.confirmSync": false,
+    "markdown.marp.themes": [
+        "./docs/rose-pine.css"
+    ],
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
 }

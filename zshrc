@@ -79,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -130,4 +130,11 @@ PROMPT='$(kube_ps1) '$PROMPT
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
 
-. "$HOME/.local/bin/env"
+#. "$HOME/.local/bin/env"
+
+export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
+export PATH="/Users/ian/.antigravity/antigravity/bin:$PATH"
+
+# direnv
+eval "$(direnv hook zsh)"
+
