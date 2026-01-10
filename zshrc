@@ -133,7 +133,7 @@ PROMPT='$(kube_ps1) '$PROMPT
 #. "$HOME/.local/bin/env"
 
 export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
-export PATH="/Users/ian/.antigravity/antigravity/bin:$PATH"
+export PATH="/Users/jjungs/.antigravity/antigravity/bin:$PATH"
 
 # direnv
 eval "$(direnv hook zsh)"

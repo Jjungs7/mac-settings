@@ -10,8 +10,8 @@ cp ~/.tmux.conf tmux.conf
 cp ~/com.googlecode.iterm2.plist .
 cp ~/.gitconfig .
 
-brew_packages=$(brew leaves 2> /dev/null)
-brew_cask_packages=$(brew ls --casks 2> /dev/null)
+brew_packages="$(brew leaves 2> /dev/null | paste -sd' ' -)"
+brew_cask_packages="$(brew ls --casks 2> /dev/null | paste -sd' ' -)"
 
 echo $brew_packages > brew_packages
 echo $brew_cask_packages > brew_cask_packages
