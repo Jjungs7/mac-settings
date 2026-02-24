@@ -1,3 +1,7 @@
+# Manual:
+# Kakaotalk
+# Slack
+
 #!/bin/bash
 defaults write -g InitialKeyRepeat -float 15.0
 defaults write -g KeyRepeat -float 2.0
@@ -25,22 +29,20 @@ sed -i '' "s/prompt_segment blue "'$CURRENT_FG'" '%~'/prompt_segment blue "'$CUR
 
 cp zshrc ~/.zshrc
 cp zprofile ~/.zprofile
+cp zprofile_k8s ~/.zprofile_k8s
 cp vimrc ~/.vimrc
 cp tmux.conf ~/.tmux.conf
 cp com.googlecode.iterm2.plist ~/
 cp gitconfig ~/
-cp cursor_settings.json ~/Library/Application\ Support/Cursor/User/settings.json
+cp vscode_settings.json ~/Library/Application\ Support/Code/User/settings.json
+cp vscode_settings.json ~/Library/Application\ Support/Cursor/User/settings.json
+cp vscode_settings.json ~/Library/Application\ Support/Antigravity/User/settings.json
+cp vscode_keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+cp vscode_keybindings.json ~/Library/Application\ Support/Cursor/User/keybindings.json
+cp vscode_keybindings.json ~/Library/Application\ Support/Antigravity/User/keybindings.json
 
 #cp intellij.idea.properties ~/Library/Application\ Support/JetBrains/IntelliJIdea2024.2/idea.properties
 
-# Manual:
-# Kakaotalk
-# Slack
-# 카카오워크
-
-# npm
-# npm install -g @json2csv/cli @commitlint/cli @commitlint/config-conventional conventional-changelog
-
-# pip
-# pip install black isort pylint pytest pytest-cov pytest-mock html2jirawiki
-
+npm install -g @json2csv/cli @commitlint/cli @commitlint/config-conventional conventional-changelog
+pip install ruff pytest pytest-cov pytest-mock html2jirawiki
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
