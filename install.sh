@@ -43,6 +43,27 @@ cp vscode_keybindings.json ~/Library/Application\ Support/Antigravity/User/keybi
 
 #cp intellij.idea.properties ~/Library/Application\ Support/JetBrains/IntelliJIdea2024.2/idea.properties
 
-npm install -g @json2csv/cli @commitlint/cli @commitlint/config-conventional conventional-changelog
-pip install ruff pytest pytest-cov pytest-mock html2jirawiki
+npm install -g @commitlint/cli @commitlint/config-conventional conventional-changelog
+pip install ruff pytest pytest-cov pytest-mock
 curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+
+asdf plugin add awscli
+asdf plugin add direnv
+asdf plugin add golang
+asdf plugin add helm
+asdf plugin add istioctl
+asdf plugin add java
+asdf plugin add k9s
+asdf plugin add kafka
+asdf plugin add kcat
+asdf plugin add kops
+asdf plugin add mysql
+asdf plugin add nodejs
+asdf plugin add okta-aws-cli
+asdf plugin add poetry
+asdf plugin add postgres
+asdf plugin add pre-commit
+asdf plugin add python
+asdf plugin add redis-cli
+asdf plugin add terraform
+asdf plugin add uv

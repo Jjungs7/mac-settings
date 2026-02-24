@@ -1,1 +1,1 @@
-asdf awscli btop curl direnv docker docker-buildx docker-compose ffmpeg gh gnuplot helm inetutils jq k9s kafka kcat ktlint kube-ps1 minikube mysql-client mysql@8.0 openssh postgresql@14 qt@5 redis socket_vmnet watch wget wireshark xan yq yt-dlp zsh-autosuggestions zsh-syntax-highlighting
+asdf btop curl docker docker-buildx docker-compose fzf gemini-cli gh gnuplot inetutils jq kube-ps1 minikube mysql@8.0 okta-aws-cli openssh qt@5 socket_vmnet watch wget wireguard-tools wireshark xan yq zsh-autosuggestions zsh-syntax-highlighting

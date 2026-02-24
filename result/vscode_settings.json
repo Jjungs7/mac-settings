@@ -1,9 +1,44 @@
 {
-    "continue.remoteConfigSyncPeriod": 1440,
-    "continue.remoteConfigServerUrl": "https://kopilot-config-beta.dev.onkakao.net/",
-    "continue.userToken": "asd",
-    "continue.enableTabAutocomplete": false,
     "editor.fontSize": 14,
-    "debug.console.fontSize": 14,
-    "editor.linkedEditing": true
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "python.analysis.typeCheckingMode": "standard",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "always",
+            "source.fixAll.ruff": "always"
+        },
+        "editor.formatOnSave": true
+    },
+    "ruff.enable": true,
+    "ruff.lint.select": ["E", "F", "I", "W", "C90"],
+    "ruff.lineLength": 120,
+    "ruff.path": [
+        "${env:HOME}/.asdf/shims/ruff"
+    ],
+    "gitlens.currentLine.enabled": false,
+    "editor.rules": [
+        120
+    ],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#eedc83"
+    },
+    "chat.viewSessions.orientation": "stacked",
+    "files.associations": {
+        ".env*": "dotenv"
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.other.dotenv",
+                "settings": {
+                    "foreground": "#FF000000"
+                }
+            }
+        ]
+    },
+    "git.confirmSync": false,
+    "update.mode": "none"
 }

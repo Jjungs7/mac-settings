@@ -1,0 +1,27 @@
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+alias k=kubectl
+complete -o default -F __start_kubectl k
+
+source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+PROMPT='$(kube_ps1) '$PROMPT
+
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+[[ $commands[istioctl] ]] && source <(istioctl completion zsh)
+
+alias kcsd="k create secret generic test --dry-run=client -o yaml"
+alias kd="k describe"
+alias kg="k get"
+alias kga="kg all"
+alias kgcm="kg cm"
+alias kgi="kg ing"
+alias kgj="kg job"
+alias kgn="kg nodes -o wide"
+alias kgp="kg po -o wide"
+alias kl="k logs"
+alias kgs="kg svc"
+alias kpf="k port-forward"
+alias krr="k rollout restart"
+alias kru="k rollout undo"
+alias ktn="k top node"
+alias ktp="k top pod"
+
