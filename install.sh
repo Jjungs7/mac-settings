@@ -1,6 +1,7 @@
 # Manual:
 # Kakaotalk
 # Slack
+# VSCode / Cursor / Antigravity
 
 #!/bin/bash
 defaults write -g InitialKeyRepeat -float 15.0
