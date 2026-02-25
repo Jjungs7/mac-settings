@@ -39,6 +39,5 @@
             }
         ]
     },
-    "git.confirmSync": false,
-    "update.mode": "none"
+    "git.confirmSync": false
 }
