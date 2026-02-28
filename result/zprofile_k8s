@@ -8,6 +8,7 @@ PROMPT='$(kube_ps1) '$PROMPT
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 [[ $commands[istioctl] ]] && source <(istioctl completion zsh)
 
+alias kapir="k api-resources"
 alias kcsd="k create secret generic test --dry-run=client -o yaml"
 alias kd="k describe"
 alias kg="k get"
